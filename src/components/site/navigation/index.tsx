@@ -20,8 +20,8 @@ const Navigation = ({currentUser }: Props) => {
     const router = useRouter();
     const {user} = useUser();
   return (
-    <div className="fixed top-0 right-0 left-0 p-4 flex items-center justify-between z-30 bg-background">
-    <aside className="flex items-center gap-3">
+    <div className="fixed top-0 right-0 left-0 py-3 flex items-center justify-between z-30 bg-background">
+    <aside className="flex items-center gap-3 pl-4">
       <Image
         src={'/assets/icon.png'}
         width={40}

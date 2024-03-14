@@ -73,7 +73,7 @@ const SecondaryAuthUserMenu: React.FC<SecondaryAuthUserMenuProps> = ({
    
     
   return (
-    <div className="relative">
+    <div className="relative pr-1">
         <div className="flex flex-row items-center gap-3">
         <div
                 onClick={toggleOpen}
