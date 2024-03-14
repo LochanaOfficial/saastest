@@ -5,7 +5,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
 import MenuItem from "@/app/components/navbar/MenuItem";
-import { ChevronLeft, Handshake, LogOut, Moon, Sun, UserRound } from "lucide-react";
+import { ChevronLeft, Gem, Handshake, LogOut, Moon, Settings, Sun, Trophy, UserRound } from "lucide-react";
 import { DropdownMenuItem } from "@/components/ui/dropdown-menu";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
@@ -108,17 +108,40 @@ const SecondaryAuthUserMenu: React.FC<SecondaryAuthUserMenuProps> = ({
                  <Avatar src={user?.imageUrl} />
                </div>
                <div className="mt-2 cursor-pointer">
+
                   <div className="w-full flex items-center hover:bg-neutral-900 p-4 font-semibold space-x-2">
                     <div>
                         <UserRound className="w-5 h-5" />
                     </div>
                     <div>My Profile</div>
                   </div>
+
                   <div onClick={() => router.push("/agency")} className="w-full flex items-center hover:bg-neutral-900 p-4 font-semibold space-x-2">
+                    <div>
+                        <Trophy className="w-5 h-5" />
+                    </div>
+                    <div>Agency Page</div>
+                  </div>
+
+                  <div className="w-full flex items-center hover:bg-neutral-900 p-4 font-semibold space-x-2">
                     <div>
                         <Handshake className="w-5 h-5" />
                     </div>
-                    <div>Agency Page</div>
+                    <div>Your Customers</div>
+                  </div>
+
+                  <div className="w-full flex items-center hover:bg-neutral-900 p-4 font-semibold space-x-2">
+                    <div>
+                        <Gem className="w-5 h-5" />
+                    </div>
+                    <div>Your Revenue</div>
+                  </div>
+
+                  <div className="w-full flex items-center hover:bg-neutral-900 p-4 font-semibold space-x-2">
+                    <div>
+                        <Settings className="w-5 h-5" />
+                    </div>
+                    <div>Settings And Themes</div>
                   </div>
                   <div  onClick={() => signOut(() => { router.push("/site"); window.location.reload(); })} className="w-full flex items-center hover:bg-neutral-900 p-4 font-semibold space-x-2">
                     <div>
