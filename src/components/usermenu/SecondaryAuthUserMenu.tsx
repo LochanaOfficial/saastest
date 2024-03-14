@@ -120,7 +120,7 @@ const SecondaryAuthUserMenu: React.FC<SecondaryAuthUserMenuProps> = ({
                     <div>
                         <Trophy className="w-5 h-5" />
                     </div>
-                    <div>Agency Page</div>
+                    <div>Agency Dashboard</div>
                   </div>
 
                   <div className="w-full flex items-center hover:bg-neutral-900 p-4 font-semibold space-x-2">
