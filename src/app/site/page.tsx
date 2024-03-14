@@ -26,8 +26,8 @@ export default function Home() {
         </div>
       </section>
       <section className="flex justify-center items-center flex-col gap-4 -mt-[100px] md:mt-[440px]">
-        <h2 className="text-4xl text-center font-bold">Choose What Fits You Right</h2>
-        <p className="text-muted-foreground text-center">
+        <h2 className="text-4xl text-center font-bold px-4">Choose What Fits You Right</h2>
+        <p className="text-muted-foreground text-center px-4">
           Our Straightforward Pricing Plans Are Tailored To Meet Your Needs. If
           {" You're"} Not <br />
           Ready To Commit You Can Get Started For Free
