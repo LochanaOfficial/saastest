@@ -41,8 +41,8 @@ const Navigation = ({currentUser }: Props) => {
     </nav>
     <aside className="flex gap-2 items-center">
         <Link href={"/agency"}
-              className={clsx("bg-primary text-white p-2 px-4 rounded-md hover:bg-primary/80", {
-                "bg-transparent !rounded-full py-2.5 border border-neutral-800 hover:bg-transparent": user
+              className={clsx("bg-primary text-white mr-3 p-2 px-4 rounded-md hover:bg-primary/80", {
+                "bg-transparent !rounded-full py-2.5 border border-neutral-800 mr-0 hover:bg-transparent": user
               })}
         >
             {user ? "Dashboard" : "Login"}
